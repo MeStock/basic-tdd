@@ -1,47 +1,48 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name
+## Lab01 - Basics of Writing Tests
 
-### Author: Student/Group Name
+### Author: Melissa Stock
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+* [submission PR](https://github.com/MeStock/lab01/pull/1)
+* [travis](https://travis-ci.com/MeStock/lab01)
 
-#### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
 
-### Modules
-#### `modulename.js`
 ##### Exported Values and Methods
+* Value: math
+    * Method: add
+    * Method: subtract
+    * Method: multiply
+    * Method: divide
+* Value: greet
+    * Method: sayHello
 
-###### `foo(thing) -> string`
-Usage Notes or examples
+###### `add(arr) -> integer`
+add([1,2,3]) -> 6
 
-###### `bar(array) -> array`
-Usage Notes or examples
+###### `subtract(arr) -> integer`
+subtract([1,2,3]) -> -4
 
-### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+###### `multiply(arr) -> integer`
+multiply([1,2,3]) -> 6
+
+###### `add(a,b) -> integer`
+divide([6,3]) -> 2
+
+###### `sayHello(string) -> string`
+sayHello('world') -> 'hello world'
 
 #### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+* How do you start the app?
+    * `node index.js`
   
 #### Tests
 * How do you run tests?
+    * `npm test`
 * What assertions were made?
-* What assertions need to be / should be made?
+    * When using arithimic methods, only numbers are accepcted as inputs
+    * When using greet methods, only strings are accepted as an input
 
-#### UML
-Link to an image of the UML for your application and response to events
+
